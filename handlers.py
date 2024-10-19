@@ -4,12 +4,13 @@ from aiogram.types import Message, CallbackQuery, ReplyKeyboardRemove
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 from openai import OpenAI
+from config import organization, api_key
 import keyboards as kb
 
 router = Router()
 client = OpenAI(
-    organization='org-qT3TXRA7xLWXCjgrgS9TjYam',
-    api_key="sk-proj-MJvO3mBuuYoq66Q1xDobT3BlbkFJ6rUrAGitwI1LTkbTkgCN",
+    organization=organization,
+    api_key=api_key,
 )
 
 
